@@ -1,0 +1,79 @@
+---
+import { Image } from "@astrojs/image/components";
+import Social from "@components/Social.astro";
+import config from "@config/config.json";
+import menu from "@config/menu.json";
+import social from "@config/social.json";
+import { markdownify } from "@lib/utils/textConverter";
+
+const {footer_content, copyright} = config.params;
+---
+
+<footer class="section bg-theme-light pb-0">
+  <div class="container">
+    
+    {/* footer menu */}
+    <div class="row">
+      <ul>
+        {
+          menu.footer.map(({text, url, story }) => (
+            <li>
+              <p class="name">{text}</p>
+             
+              <p>{story}</p>
+            </li>
+          ))
+        }
+      </ul>
+
+
+
+
+      {menu.support.map((col) => {
+        return (
+          <div class="mb-12 sm:col-6 lg:col-3">
+            
+            <h2 class="h4" set:html={markdownify(col.name)}></h2>
+            <ul class="mt-6">
+              {col?.menu.map((item) => (
+                <li class="mb-1">
+                  <a href={item.url} rel="">
+                   
+                    {item.text}
+                    {item.url}
+                    {item.staff}
+                    
+                    
+                   
+                    
+                    
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        );
+      })}
+      {/* social icons */}
+      <div class="md-12 sm:col-6 lg:col-3">
+        <a href="/" aria-label="Bigspring">
+          <Image
+            src={config.site.logo}
+            width={Number(config.site.logo_width)}
+            height={Number(config.site.logo_height)}
+            alt=""
+          />
+        </a>
+        
+        <p class="mt-3 mb-6" set:html={markdownify(footer_content)}></p>
+        <Social source={social} className="social-icons mb-8" />
+      </div>
+    </div>
+    {/* copyright */}
+    <div class="border-t border-border py-6">
+      <p class="text-sm text-center" set:html={markdownify(copyright)}></p>
+    </div>
+    <p>The contents of this website were developed under a State Personnel Development Grant (SPDG) from the US Department of Education (CALI/Award #H323A170011), Project Officer, david.guardino@ed.gov. However, the contents of this site do not necessarily represent the policy of the US Department of Education and no assumption of endorsement by the Federal government should be made.</p>
+  </div>
+  
+</footer>

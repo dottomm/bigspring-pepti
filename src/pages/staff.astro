@@ -1,0 +1,30 @@
+---
+import Base from "@layouts/Base.astro";
+import { markdownify } from "@lib/utils/textConverter";
+import { getEntryBySlug } from "astro:content";
+const entry = await getEntryBySlug("staff", "index");
+const { staff, name,title, image, description } = entry.data;
+---
+
+<Base title={title} description={description}>
+  <section class="section">
+    <div class="container">
+      <h1 class="text-center font-normal" set:html={markdownify(title)} />
+      <div class="section row -mt-6">
+        {
+          staff?.map((staff) => (
+            <div class="col-12 mt-6 md:col-6">
+              <div class="p-12  shadow">
+                <div class="faq-head relative">
+                  <h4 set:html={markdownify(staff.name)} />
+                </div>
+                <img src={staff.image} />
+                <p class="faq-body mt-4" set:html={markdownify(staff.title)} />
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</Base>

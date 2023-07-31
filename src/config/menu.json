@@ -1,0 +1,80 @@
+{
+  "main": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Blog",
+      "url": "/blog"
+      
+    },
+    {
+      "name": "Implementation Guide",
+      "url": "/guide"
+    },
+    {
+      "name": "Resource Guide ",
+      "url": "/ResourceGuide "
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    },
+    {
+      "name": "Staff",
+      "url": "/staff"
+    },
+    {
+      "name": "FAQ",
+      "url": "/faq"
+    }
+   
+  ],
+  "footer": [
+    {
+      "name": "Grant",
+      "menu": [
+        {
+          "text": "OSEP",
+          "url": "/pricing"
+        },
+        {
+          "text": "California Department of Education",
+          "url": "#"
+        },
+        {
+          "text": "Napa County Office of Education",
+          "url": "https://napacoe.org"
+        },
+        {
+          "text": "US Department of Education",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  
+  "support": [
+    {
+      "name": "",
+      "menu": [
+        {
+          "text": "Desired Results Access Project",
+          "url": "https://draccess.org",
+          "staff":{
+            
+              "admin": "Tom",
+              "assist": "Stacy"
+          
+          }
+        },
+        {
+          "text": "CALI Reads",
+          "url": "https://calireads.org"
+        }
+      ]
+
+  }
+]
+}

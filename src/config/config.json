@@ -1,0 +1,39 @@
+{
+  "site": {
+    "title": "PEPTI",
+    "base_url": "",
+    "base_path": "/",
+    "trailing_slash": false,
+    "favicon": "/images/favicon.png",
+    "logo": "/images/logoPepti2.png",
+    "logo_width": "200",
+    "logo_height": "38",
+    "logo_text": "Astroplate"
+  },
+
+  "settings": {
+    "pagination": 4,
+    "summary_length": 200,
+    "blog_folder": "blog"
+  },
+
+  "nav_button": {
+    "enable": false,
+    "label": "Learn More",
+    "link": "/contact"
+    
+  },
+
+  "params": {
+    "contact_form_action": "mailto:ttranfaglia@napacoe.org",
+    "tag_manager_id": "",
+    "footer_content": "Partnerships for Effective Practices in Transition and Inclusion Project",
+    "copyright": "&#169; PEPTI 2023"
+  },
+
+  "metadata": {
+    "meta_author": "Themefisher",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "astro boilerplate"
+  }
+}
