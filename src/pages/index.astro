@@ -59,14 +59,14 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
           feature!.features.map((item, i) => (
             <div class="feature-card rounded-xl bg-white p-5 pb-8 text-center">
               {item.icon && (
-                <Image
+                
+                <img
                   class="mx-auto"
+                  alt={item.icon}
                   src={item.icon}
                   width={30}
                   height={30}
-                  alt=""
                 />
-               
               )}
               <div class="mt-4">
                 <p class="h5" set:html={markdownify(item!.name)} />
