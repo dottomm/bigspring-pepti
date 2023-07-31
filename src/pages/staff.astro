@@ -18,7 +18,7 @@ const { staff, name,title, image, description } = entry.data;
                 <div class="faq-head relative">
                   <h4 set:html={markdownify(staff.name)} />
                 </div>
-                <img src={staff.image} />
+                <img src={staff.image} alt=""/>
                 <p class="faq-body mt-4" set:html={markdownify(staff.title)} />
               </div>
             </div>
