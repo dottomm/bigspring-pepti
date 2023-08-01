@@ -4,7 +4,7 @@ draft: false
 staff:
 - name: Vicki Griffo
   title: Project Director
-  image: '../mages/staff/vicki.png'
+  image: '../images/staff/vicki.png'
 
 - name: Sarah Hughes
   title: Sr. Program Manager
