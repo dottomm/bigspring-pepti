@@ -20,7 +20,7 @@ staff:
 
 - name: Tom Tranfaglia
   title: Technolgy Coordinator
-  image: 'images/staff/tom.webp'
+  image: '../images/staff/tom.webp'
 
 
 ---
