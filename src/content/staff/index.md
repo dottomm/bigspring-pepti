@@ -12,7 +12,7 @@ staff:
 
 - name: Amy Maynard
   title: Assistant Director of Evaluation
-  image: 'images/staff/amy.jpg'
+  image: 'images/amy.jpg'
 
 - name: Kee-An Lauser
   title: Fiscal Director
